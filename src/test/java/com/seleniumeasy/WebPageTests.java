@@ -2,7 +2,7 @@ package com.seleniumeasy;
 
 import org.junit.*;
 
-public class RadioButtonTests {
+public class WebPageTests {
 
     @BeforeClass
     public static void setup() {
