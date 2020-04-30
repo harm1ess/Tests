@@ -1,9 +1,8 @@
 package com.seleniumeasy;
 
-import org.junit.*;
-
-import static com.seleniumeasy.PathPage.TITLE_DEMOPAGE;
-import static com.seleniumeasy.PathPage.TITLE_HOMEPAGE;
+import org.junit.Assert;
+import org.junit.BeforeClass;
+import org.junit.Test;
 
 public class WebPageTests {
 
@@ -41,8 +40,7 @@ public class WebPageTests {
         Pages.pathPages().goTo();
         PathPage pathPage = Pages.pathPages().getPathPage("Radio-ref");
         pathPage.goTo();
-        Assert.assertTrue(pathPage.isAtPathPage("Selenium Easy - Best Demo website to practice Selenium Webdriver Online"));
-        //Assert.assertTrue(pathPage.isAtPathPage("Selenium Easy Demo - Radio buttons demo for Automation"));
+        Assert.assertTrue(pathPage.isAtPathPage("Selenium Easy Demo - Radio buttons demo for Automation"));
     }
 
     //@AfterClass
